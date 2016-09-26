@@ -9,29 +9,27 @@ Board::Board()
 
 void Board::addChecker(char who, int row, int collu)
 {
-	int oppPieces = 0;
-	int userPieces = 0;
+	int whitePieces = 0;
+	int blackPieces = 0;
 	
 
-	cout << "Enter the number of your pieces, and then your opponent's pieces: " << endl;
-	cin >> userPieces >> oppPieces;
+	cout << "Enter the number of white pieces and then black pieces, followed by their coordinates, (row,collumn): " << endl;
+	cin >> whitePieces >> blackPieces;
 	
-	
-	
-	cout << "Enter the coordinates of your pieces, followed by those of your opponent's: " << endl;
+
 
 	
-	for (int user = 1; user <= userPieces; user++)
+	for (int white = 1; white <= whitePieces; white++)
 	{	
-		who = 'B';
+		who = 'W';
 		cin >> row >> collu;
 		board[row][collu]= who;
 	}
 
 	
-	for (int opponents = 1;opponents <= oppPieces; opponents++)
+	for (int black = 1;black <= blackPieces; black++)
 	{
-		who = 'W';
+		who = 'B';
 		cin >> row >> collu;
 		board[row][collu] = who;
 	}
