@@ -12,8 +12,8 @@ void Board::addChecker(char who, int row, int collu)
 	int whitePieces = 0;
 	int blackPieces = 0;
 	
-
-	cout << "Enter the number of white pieces and then black pieces, followed by their coordinates, (row,collumn): " << endl;
+	
+	cout << "Enter the number of white pieces and then black pieces (w b), followed by their coordinates, (row collumn): " << endl;
 	cin >> whitePieces >> blackPieces;
 	
 
@@ -41,6 +41,8 @@ void Board::addChecker(char who, int row, int collu)
 
 void Board::print()
 {
+	//Print algorithm from Prof Charnesky's example
+
 	for (int row = 7;row >= 0; row--)
 	{
 		cout << row << "\t";
