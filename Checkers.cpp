@@ -9,9 +9,12 @@ program will calculate the maximum number of moves that the king can make.
 
 int main()
 {
+
+	char who = 0;
+	int row = 0;
+	int collu = 0;
 	Board board;
-	board.addChecker();
-	board.print();
+	board.addChecker(who, row, collu);
 	system("pause");
 	return 0;
 }

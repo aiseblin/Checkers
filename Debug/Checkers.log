@@ -1,2 +1,2 @@
-﻿  Checkers.cpp
-c:\users\afeefeh\documents\github\cis200-fall2016-aiseblin\checkers\checkers\checkers.cpp(13): error C3867: 'Board::addChecker': non-standard syntax; use '&' to create a pointer to member
+﻿  Board.cpp
+  Checkers.vcxproj -> C:\Users\Afeefeh\Documents\GitHub\CIS200-Fall2016-aiseblin\Checkers\Debug\Checkers.exe
